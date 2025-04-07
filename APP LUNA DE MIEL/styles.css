@@ -1,0 +1,130 @@
+/* styles.css */
+
+/* Fondo global de la página (playa general) */
+body {
+    font-family: 'Pacifico', cursive; /* Fuente relajada */
+    margin: 0;
+    padding: 0;
+    background: url('imagenes/fondo.jpg') no-repeat center center fixed; /* Fondo de playa */
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alineación vertical desde arriba */
+    align-items: center; /* Centrado horizontal */
+    min-height: 100vh; /* Permite que el contenido se expanda más allá de la ventana */
+    text-align: center;
+    background-blur: 10px;
+    overflow-y: auto; /* Permite el scroll vertical */
+}
+
+/* Título principal de la app en el centro de la página */
+.main-title {
+    margin-bottom: 50px; /* Espacio entre el título y el contenedor de las horas */
+}
+
+/* Titulo principal */
+h1 {
+    font-size: 6rem; /* Título grande */
+    font-family: 'Lobster', cursive;
+    color: #ff7f50; /* Color coral */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro translúcido */
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+/* Reloques individuales */
+.clock {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
+    background-blur: 10px;
+    height: 300px; /* Altura fija para los relojes */
+    font-size: 2rem; /* Tamaño de fuente de las ciudades más grande */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: inherit; /* Hereda el color de los elementos hijos */
+}
+
+/* Efecto al pasar el mouse sobre los relojes */
+.clock:hover {
+    transform: translateY(-10px);
+}
+
+/* Títulos de cada reloj (Nombres de ciudades más grandes) */
+h2 {
+    font-size: 3rem;
+    color: #ffeb3b; /* Amarillo brillante */
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Texto de la hora (hora en blanco rojizo) */
+p {
+    font-size: 4rem; /* Aumento de tamaño de la hora */
+    font-weight: bold;
+    color: #ff6347; /* Blanco rojizo */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilos para los diferentes fondos de las ciudades */
+#las-vegas {
+    background-image: url('imagenes/vegas.jpg'); /* Fondo de Las Vegas (Cartel famoso) */
+}
+
+/* Cambiar color de la hora de Las Vegas a verde */
+#las-vegas p {
+    color: #4caf50; /* Color verde */
+}
+
+#new-york {
+    background-image: url('imagenes/newyork.jpg'); /* Fondo de Nueva York (Estatua de la libertad) */
+}
+
+#madrid {
+    background-image: url('imagenes/madrid.jpg'); /* Fondo de Madrid (Torres Kio) */
+}
+
+#cancun {
+    background-image: url('imagenes/cancun.jpg'); /* Fondo de Cancún (Pirámide Azteca) */
+}
+
+/* Fondo para el contenedor de las horas */
+.clock div {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilo de los enlaces (cuando haces clic en una ciudad) */
+.clock a {
+    text-decoration: none;
+    color: inherit; /* El color del enlace hereda el color del texto */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efecto cuando el mouse pasa sobre los enlaces */
+.clock a:hover {
+    color: #ff6347; /* Color naranja brillante cuando pasas el mouse */
+}
